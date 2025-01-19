@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Pagination Component with Pac-Man Animation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates a simple and interactive pagination component built with React and TypeScript. The design includes a Pac-Man animation that moves and reverses direction depending on the selected page.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Dynamic Pagination**: Navigate through pages with buttons.
+2. **Pac-Man Animation**:
+   - Moves left to right or vice versa based on the selected page.
+   - Reacts to user interactions with smooth transitions.
+3. **Reversing Effect**: Pac-Man reverses direction when navigating to a previous page.
+4. **Custom Styling**: Designed with CSS for a playful and vibrant appearance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   https://github.com/tahaesii/pacmanPagination.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
+   ```bash
+   cd pagination-pacman
+   ```
 
-### `npm run build`
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Code Overview
 
-### `npm run eject`
+### Component: `Pagination`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **State Management**:
+  - `activePage`: Tracks the current active page.
+  - `isReversing`: Determines the direction of Pac-Man.
+- **Refs**:
+  - `previousPage`: Stores the last active page for comparison.
+- **Methods**:
+  - `handlePageChanged`: Updates the state based on user interaction and determines the direction of Pac-Man.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### CSS Highlights
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Pac-Man Animation**:
+  - Transitions and rotations provide the "waka-waka" effect.
+  - `@keyframes` animation enhances the mouth movement.
+- **Styling Variables**:
+  - Easily customizable dimensions and colors with CSS variables.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Interact with the numbered buttons to navigate between pages.
+2. Observe the Pac-Man character move and reverse direction when navigating.
+3. Hover over the Pac-Man to see additional animations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Customization
+
+### CSS Variables:
+Modify the following variables in `styles.css` to adjust dimensions and colors:
+
+- `--ddim`: Dot dimensions.
+- `--rd`: Radius of Pac-Man's mouth.
+- `--pm`: Color of Pac-Man.
+
+### Component Enhancements:
+You can extend the `Pagination` component by:
+
+- Adding more pages.
+- Including additional animations.
+- Customizing button designs.
+
+---
+
+## Technologies Used
+
+- React (with TypeScript)
+- CSS for styling and animations
+
+---
+
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/b1d01240-e33b-400d-864d-2f9c8dfc96ae)
+
+
+
+
